@@ -1,0 +1,33 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cat-face img {
+  width: 70px;          
+  height: auto;
+  vertical-align: middle; 
+  margin: 0 5px;
+}
+
+.countdown-card {
+  border: 2px solid #f0c0c0;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.countdown {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.cat-animation {
+  font-size: 2em;
+  margin-top: 10px;
+}
