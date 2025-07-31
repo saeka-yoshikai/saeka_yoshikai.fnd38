@@ -7,11 +7,28 @@ body {
 }
 
 .cat-face img {
-  width: 70px;          
+  width: 80px;          
   height: auto;
   vertical-align: middle; 
   margin: 0 5px;
 }
+
+.direction-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.direction-btn.active {
+  background-color: #ffd6d6; 
+  color: #000;
+  border: 2px solid #ff8080;
+  font-weight: bold;
+}
+
 
 .countdown-card {
   border: 2px solid #f0c0c0;
@@ -30,4 +47,37 @@ body {
 .cat-animation {
   font-size: 2em;
   margin-top: 10px;
+}
+
+#timeTableList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.time-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.alert {
+  color: #d80000;
+  font-weight: bold;
+  font-size: 1.3em; 
+  margin-top: 10px;
+}
+
+.alert-cat {
+  display: block;
+  margin: 5px auto 0 auto;
+  max-width: 150px;
+  height: auto;
 }
