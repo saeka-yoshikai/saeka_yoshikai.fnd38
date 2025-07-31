@@ -203,7 +203,7 @@ function NextTrain() {
   countdownText.textContent =
     (diffMin < 10 ? "0" : "") + diffMin + ":" + (diffSec < 10 ? "0" : "") + diffSec;
 
-  if (diffMin === 15 && diffSec === 0) {
+  if (diffMin <= 10 && diffSec >= 0) {
     alertBox.style.display = "block";
   } else {
     alertBox.style.display = "none";
