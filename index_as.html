@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ねこねこ電車時刻表</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body> 
+      <!-- タイトル -->
+      <h1>
+        <span class="cat-face">
+          <img src="太鼓猫さん.png">
+        </span>
+        😸ねこねこ電車時刻表😸
+        <span class="cat-face">
+          <img src="急ぐ猫さん.png">
+      </h1>
+
+      <!-- 方面選択 -->
+      <div class="direction-selector">
+        <label>方面を選択にゃ🐾：</label>
+        <div class="direction-buttons">
+          <button class="direction-btn active" data-direction="岡崎">岡崎方面</button>
+          <button class="direction-btn" data-direction="高蔵寺">高蔵寺方面</button>
+        </div>
+      </div>
+
+      <!-- 次の電車の情報 -->
+      <div class="countdown-section">
+        <div class="countdown-card" id="nextTrainCard">
+          <div class="countdown-label">🐈次の電車🐾</div>
+          <div class="train-time" id="nextTrainTime">--:--</div>
+          <div class="countdown" id="nextCountdown">--:--</div>
+          <div class="cat-animation" id="nextCatAnimation" style="display: none">🐈</div>
+          <div class="alert" id="nextAlert" style="display: none">もうすぐ出発にゃ！</div>
+        </div>
+      </div>
+
+      <!-- 時刻表 -->
+      <div class="time-table">
+        <h3>🚃本日の時刻表 🚃</h3>
+        <div class="time-list" id="timeTableList">
+          <!-- JavaScript で時刻を表示 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- スクリプト読み込み -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
